@@ -27,7 +27,7 @@ services:
       - "6379"
 
   #####################################
-    # Graciosa app
+    # Graciosa rootSite
   #####################################
   app:
     build: ${APP_PATH}/docker/php_base

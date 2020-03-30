@@ -12,5 +12,17 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('rootSite.app');
+});
+
+Route::get('/projects', function () {
+    return view('rootSite.app');
+});
+
+Route::get('/awards', function () {
+    return view('rootSite.app');
+});
+
+Route::get('/social', function () {
+    return view('rootSite.app');
 });
