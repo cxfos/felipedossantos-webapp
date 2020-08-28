@@ -1,4 +1,6 @@
 {
     "/js/rootSiteApp.js": "/js/rootSiteApp.js",
-    "/css/rootSite.css": "/css/rootSite.css"
+    "/css/rootSite.css": "/css/rootSite.css",
+    "/css/thayDayCare.css": "/css/thayDayCare.css",
+    "/js/thayDayCare.js": "/js/thayDayCare.js"
 }

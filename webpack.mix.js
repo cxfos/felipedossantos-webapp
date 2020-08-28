@@ -13,3 +13,6 @@ const mix = require('laravel-mix');
 
 mix.react('resources/js/rootSite/rootSiteApp.js', 'public/js')
    .sass('resources/sass/rootSite/rootSite.scss', 'public/css');
+
+mix.react('resources/js/thayDayCare/thayDayCare.js', 'public/js')
+   .sass('resources/sass/thayDayCare/thayDayCare.scss', 'public/css');

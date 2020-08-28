@@ -15,14 +15,38 @@ Route::get('/', function () {
     return view('rootSite.app');
 });
 
-Route::get('/projects', function () {
+Route::prefix('main')->group(function () {
+
+  Route::get('/', function () {
     return view('rootSite.app');
+  });
+
+  Route::get('{page}', function (String $page) {
+    return view('rootSite.app');
+  });
+
 });
 
-Route::get('/awards', function () {
+Route::prefix('admin')->group(function () {
+
+  Route::get('/', function () {
     return view('rootSite.app');
+  });
+
+  Route::get('{page}', function (String $page) {
+    return view('rootSite.app');
+  });
+
 });
 
-Route::get('/social', function () {
-    return view('rootSite.app');
+Route::prefix('thaydaycare')->group(function () {
+
+  Route::get('/', function () {
+    return view('thayDayCare.app');
+  });
+
+  Route::get('{page}', function (String $page) {
+    return view('thayDayCare.app');
+  });
+
 });
