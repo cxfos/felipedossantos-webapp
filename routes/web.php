@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('rootSite.app');
+    return view('rootSite.demo');
 });
 
 Route::prefix('main')->group(function () {
