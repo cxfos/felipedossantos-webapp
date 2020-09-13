@@ -1,0 +1,9 @@
+export PATH="$PATH:$HOME/.composer/vendor/bin"
+export APP_NAME=felipedossantos-webapp
+
+BASEDIR=$HOME/learnworkspace
+
+export APP_PATH=$BASEDIR/$APP_NAME
+
+# this should be relative to the project root without a leading slash (eg `public`, `htdocs`)
+export APP_PUBLIC_FOLDER_NAME=public
