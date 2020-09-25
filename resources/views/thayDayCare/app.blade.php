@@ -7,11 +7,11 @@
     <title>Thay Day Care</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link href="{{ asset('css/thayDayCare.css') }}" rel="stylesheet">
+    <link href="{{ asset(mix('css/thayDayCare.css')) }}" rel="stylesheet">
   </head>
   <body>
     <div id="thay_daycare_app"></div>
 
-    <script src="{{ asset('js/thayDayCare.js')}}"></script>
+    <script src="{{ asset(mix('js/thayDayCare.js'))}}"></script>
   </body>
 </html>

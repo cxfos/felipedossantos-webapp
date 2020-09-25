@@ -18,8 +18,6 @@ bootstrap/compiled.php
 app/storage/
 
 # Laravel 5 & Lumen specific
-public/storage
-public/hot
 storage/*.key
 .env.*.php
 .env.php
@@ -29,5 +27,10 @@ storage/*.key
 .phpunit.result.cache
 Homestead.json
 Homestead.yaml
-/public/js/*.js
-/public/build/*
+public/build/
+public/css/*
+public/hot
+public/images/*
+public/js/*
+public/mix-manifest.json
+public/storage/

@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom';
 import { Provider } from "react-redux";
 import CssBaseline from '@material-ui/core/CssBaseline';
 
+import '../../sass/thayDayCare/thayDayCare.scss';
+
 import initialState from "./redux/initialState";
 import configureStore from "./redux/store";
 
