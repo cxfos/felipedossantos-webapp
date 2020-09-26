@@ -10,6 +10,7 @@ import Box from '@material-ui/core/Box';
 import LockOutlinedIcon from '@material-ui/icons/LockOutlined';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
+import Policies from "../../common/components/Policies";
 import Copyright from "./Copyright";
 
 const useStyles = makeStyles((theme) => ({
@@ -96,6 +97,7 @@ export default function SignIn() {
       </div>
       <Box mt={8}>
         <Copyright />
+        <Policies />
       </Box>
     </>
   );

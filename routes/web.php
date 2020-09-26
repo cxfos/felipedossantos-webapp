@@ -11,6 +11,13 @@
 |
 */
 
+Route::get('/privacy-policy', function () {
+    return view('policy.privacy');
+});
+Route::get('/cookie-policy', function () {
+    return view('policy.cookie');
+});
+
 Route::get('/', function () {
     return view('rootSite.demo');
 });
