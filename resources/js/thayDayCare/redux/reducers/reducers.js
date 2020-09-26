@@ -1,8 +1,9 @@
 import { combineReducers } from 'redux';
 
+import appConfig from "./appConfig";
+
 const reducers = combineReducers({
-  title: (state, action) => action ? 'Thay Day Care' : state,
-  description: (state, action) => action ? 'Welcome to Thais\' Day Care' : state,
+  appConfig,
 });
 
 export default reducers;

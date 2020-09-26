@@ -2,6 +2,8 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import {Provider} from "react-redux";
 
+import '../../sass/rootSite/rootSite.scss';
+
 import SinglePage from './containers/SinglePage';
 import configureStore from "./redux/store";
 import MainNav from "./components/MainNav";
