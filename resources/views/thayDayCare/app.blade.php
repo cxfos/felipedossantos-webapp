@@ -12,6 +12,8 @@
   <body>
     <div id="thay_daycare_app"></div>
 
-    <script src="{{ asset(mix('js/thayDayCare.js'))}}"></script>
+    <script src="{{ asset(mix('/js/vendor-common.js'))}}"></script>
+    <script src="{{ asset(mix('/js/vendor-thayDayCare.js'))}}"></script>
+    <script src="{{ asset(mix('/js/thayDayCare.js'))}}"></script>
   </body>
 </html>

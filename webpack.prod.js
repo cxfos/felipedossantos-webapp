@@ -16,6 +16,19 @@ module.exports = {
     path: path.resolve(__dirname, "public")
   },
   optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          priority: -10,
+          name(module, chunks, cacheGroupKey) {
+            const chunksName = chunks.length > 1 ? 'common' : chunks.map((item) => item.name).join('_');
+            return `${cacheGroupKey}-${chunksName}`;
+          },
+        }
+      }
+    },
     minimizer: [
       new OptimizeCssAssetsPlugin(),
       new TerserPlugin()

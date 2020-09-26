@@ -3,12 +3,32 @@ var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
   mode: "development",
+  watch: true,
+  watchOptions: {
+    ignored: /node_modules/,
+    poll: true
+  },
   entry: {
     thayDayCare: "./resources/js/thayDayCare/thayDayCare.js"
   },
   output: {
-    filename: "[name].bundle.js",
-    path: path.resolve(__dirname, "public/js")
+    filename: "js/[name].bundle.js",
+    path: path.resolve(__dirname, "public")
+  },
+  optimization: {
+    splitChunks: {
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,
+          chunks: 'all',
+          priority: -10,
+          name(module, chunks, cacheGroupKey) {
+            const chunksName = chunks.length > 1 ? 'common' : chunks.map((item) => item.name).join('_');
+            return `${cacheGroupKey}-${chunksName}`;
+          },
+        }
+      }
+    },
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -34,7 +54,7 @@ module.exports = {
           loader: "file-loader",
           options: {
             name: "[name].[hash].[ext]",
-            outputPath: "./public/images"
+            outputPath: "./images"
           }
         }
       },

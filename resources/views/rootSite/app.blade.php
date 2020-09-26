@@ -7,11 +7,13 @@
     <title>Felipe dos Santos</title>
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css?family=Nunito:200,600" rel="stylesheet">
-    <link href="{{ asset('css/rootSite.css') }}" rel="stylesheet">
+    <link href="{{ asset(mix('/css/rootSiteApp.css')) }}" rel="stylesheet">
   </head>
   <body>
     <div id="root_site_app"></div>
 
-    <script src="{{ asset('js/rootSiteApp.js')}}"></script>
+    <script src="{{ asset(mix('/js/vendor-common.js'))}}"></script>
+    <script src="{{ asset(mix('/js/vendor-rootSiteApp.js'))}}"></script>
+    <script src="{{ asset(mix('/js/rootSiteApp.js'))}}"></script>
   </body>
 </html>
